@@ -68,6 +68,9 @@ function html() {
 }
 
 function css() {
+    src([source_folder+'/fonts/font-awesome/css/*.css'])
+        .pipe(dest(path.build.css));
+    
     return src(path.src.css)
         .pipe(scss({
             outputStyle: "expanded"
