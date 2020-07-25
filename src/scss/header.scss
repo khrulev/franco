@@ -1,0 +1,115 @@
+.header-wrapper__top{
+    background-color: #a57ee7;
+    min-height: 70px;
+    height: 1px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    max-width: 1240px;
+    padding: 0 20px 0 20px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-top__icons{
+
+    text-align: center;
+    display: flex;
+    height: inherit;
+    
+    a{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        i{
+            padding: 0 13px;
+            color: #fff;
+        }
+        &:hover{
+            background-color: #fff; 
+            i{
+                color: black;
+            }   
+        }
+    }
+
+}
+
+.header-bottom{
+    min-height: 70px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-bottom__menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-bottom__search{
+    width: 210px;
+    height: 45px;
+    border-radius: 23px;
+    border: 1px solid #505050;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: Muli;
+    font-size: 12px;
+    font-weight: 400;
+    input{
+        padding: 0 5px 0 3px;
+        margin: 0 0 0 20px;
+        opacity: 0.2;
+    }
+ 
+    a{
+        color: black;
+        padding-left: 10px;
+        &:hover{
+            color: #8262b5;
+        }
+    }
+}
+
+.header-bottom__signin{
+    color: #000000;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    span,i{
+        padding-right: 18px;
+    }
+    &:hover{
+        color: #8262b5;
+    }
+}
+
+.menu__body {
+    display: flex;
+    width: auto;
+}
+
+@import './burger.scss';
+
+// ++ STICKY
+.sticky {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }

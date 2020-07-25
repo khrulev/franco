@@ -1,4 +1,10 @@
-
+//*Breakpoints*/
+$xs1: 575.98px;
+$sm1: 767.98px;
+$md1: 991.98px;
+$md2: 1139.98px;
+$lg1: 1199.98px;
+$xl1: 1919.98px;
 
 @mixin font($font_name, $file_name, $weight, $style) {
 
@@ -11,8 +17,14 @@
     }
 }
 
+@import "./nullstyle.scss";
 @import "./fonts.scss";
+@import "./header.scss";
+@import "./main.scss";
 
 body {
-    font-size: 16px;
+    background-color: #ffffff;
 }
+
+
+

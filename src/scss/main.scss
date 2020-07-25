@@ -1,0 +1,224 @@
+.offer-wrapper{
+    min-height: 737px;
+    // max-height: 737px;
+    display: flex;
+    justify-content: center;
+}
+
+.offer{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    img{
+        opacity: 0.6;
+        z-index: 0;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    &__top{
+        z-index: 10;
+    }
+    &__text{
+        z-index: 10;
+        
+    }
+    &__link{
+        z-index: 10;
+    }
+}
+
+.offer-man, .offer-women{
+    &__top{
+        position: relative;
+        z-index: 10;
+    }
+    &__text{
+        position: relative;
+        z-index: 10;
+    }
+    &__link{
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.offer-women{
+    
+    &__text{
+        
+        margin: 318px 0 0 auto;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 9.6px;
+        max-width: 600px;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__link{
+        margin: 0 0 0 260px;
+        a{
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 25px 41px;
+            background-color: #a57ee7;
+            border: 1px solid #505050;
+            
+        }
+
+        display: inline-block;
+        padding: 0;
+        line-height: 5; 
+    }
+}
+
+
+.offer-man{
+    &__top{
+        margin: 230px 0 0 61px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20.8px;  
+        line-height: 44px;
+        background-color: #1a2730;
+        padding: 0 67px;
+        display: inline-block;
+    }
+    &__text{
+        margin: 10px 0 0 125px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 9.6px;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__link{
+        margin: 10px 0 0 125px;
+        a{
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 25px 41px;
+            background-color: #a57ee7;
+            border: 1px solid #505050;
+            
+        }
+
+        display: inline-block;
+        padding: 0;
+        line-height: 5; 
+    }
+}
+
+.offer-man img{
+    object-position: right;
+    
+}
+
+// SECTION 1 ------------
+
+.collection-wrapper{
+    padding-top: 50px;
+    max-height: 4772px;
+    background-color: #f7f7f7;
+}
+
+.collection{
+    display: flex;
+    &__col_66{
+        flex: 0 0 66.66%;
+        overflow: hidden;
+    }
+    &__col_33{
+        flex: 0 0 33.33%;
+        overflow: hidden;
+    }
+}
+
+.row{
+    &__content_top{
+        overflow: hidden;
+        position: relative;
+        height: 374px;
+        img{
+            padding: 6px 6px 6px 6px;
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            -o-object-position: center;
+            object-position: right;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+
+    &__text{
+    }
+
+    &___link{
+    }
+}
+
+.column{
+    display: flex;
+    height: 414px;
+    &__item{
+        flex: 0 0 50%;
+        width: 100%;
+        height: 414px;
+        overflow: hidden;
+        position: relative;
+        img{
+            padding: 6px 6px 6px 6px;
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            -o-object-position: center;
+            object-position: center;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+    
+    &__text{}
+}
+
+.column2__item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    img{
+        padding: 6px 6px 6px 6px;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }    
+}
