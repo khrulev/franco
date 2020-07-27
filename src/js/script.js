@@ -24,6 +24,19 @@ $(document).ready(function(){
         }
     );
 
+    $('.testi-slider').slick(
+        {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        appendArrows: $('.testi-slider-arrow'),
+        prevArrow: '<button id="testi-prev" type="button" class="slick-prev slick-arrow"><img src="../img/main/slider/left-arrow.png"></img></button>',
+        nextArrow: '<button id="testi-next" type="button" class="slick-next slick-arrow"><img src="../img/main/slider/right-arrow.png"></img></button>'
+        }
+    );
+
+
     window.onscroll = function() {myFunction()};
 
     var navbar = document.getElementById("navbar");
