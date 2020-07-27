@@ -461,13 +461,17 @@
     background-color: #8571d7;
 }
  
-.item__picture{
-    max-width: 988px;
-    padding: 0 20px 0 20px;
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    }
+.testi-slider-item-wrapper{
+    padding: 0 170px;
+}
+
+// .item__picture{
+//     max-width: 988px;
+//     padding: 0 20px 0 20px;
+//     display: block;
+//     margin: 0 auto;
+//     height: 100%;
+//     }
 
 // +++++++++ SLIDERS
 // List styles
@@ -510,7 +514,7 @@
 } 
 
 .testi-slider{
-    padding: 0 0 64px 0;
+    // padding: 0 0 64px 0;
     
     &__more_link{
         text-align: center;
@@ -539,8 +543,8 @@
   }
   
   .slick-track{
-      display: flex;
-      padding: 0 0 120px 0;
+        display: flex;
+        padding: 52px 0 30px 0;
   }
 
   .sticky_jumbo{
@@ -548,12 +552,12 @@
   }
 
   //card style 
-  .item{
+  .testi-slider-item-wrapper{
       display: flex;
       flex-direction: column;
       text-align: center;
     //   padding: 30px;
-      &__text_top{
+    .item__text_top{
         display: flex; 
         justify-content: center;  
         color: #ffffff;
@@ -562,7 +566,7 @@
         line-height: 22px;     
      
       }
-      &__text_center{
+    .item__text_center{
         color: #ffffff;
         font-family: Montserrat;
         font-size: 16px;
@@ -571,7 +575,7 @@
         /* Text style for "- - -" */
         font-size: 12px;
       }
-      &__text_bottom{
+    .item__text_bottom{
         color: #ffffff;
         font-family: Montserrat;
         font-size: 16px;
@@ -597,8 +601,16 @@
 
         .slick-prev{
             position: absolute;
-            left: -20px;
+            left: 0px;
             z-index: 5;
+            top: 50%
+        }
+
+        .slick-next{
+            position: absolute;
+            right: 0px;
+            z-index: 5;
+            top: 50%
         }
 }  
     
