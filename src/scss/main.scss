@@ -603,14 +603,14 @@
             position: absolute;
             left: 0px;
             z-index: 5;
-            top: 50%
+            top: 40%
         }
 
         .slick-next{
             position: absolute;
             right: 0px;
             z-index: 5;
-            top: 50%
+            top: 40%
         }
 }  
     
@@ -751,6 +751,85 @@
             &:hover{
                 background-color: #663cad;
             }
+        }
+    }
+
+    // About Us
+    .about-wrapper{
+        background-color: #ffffff;
+    }
+    .about-wrapper-inner{
+        display: flex;
+    }
+    .about-info{
+        flex: 0 0 60%;
+        &__title{
+            position: relative;
+            padding: 178px 0 27px 0;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3.6px;
+            &:before, &:after{
+                content: '';
+                background-color: #a57ee7;  
+                position: absolute; 
+                width: 50px;
+                height: 1px; 
+                
+                transition: all 0.3s ease 0s;           
+            }
+            &:before{
+                bottom: 10px;
+                left: 0;             
+            }
+            &:after{
+                bottom: 5px; 
+                left: 15px;           
+            }
+        }
+        &__text{
+            padding: 20px 134px 49px 0;
+            color: #000000;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            /* Text style for "Lorem ipsu" */
+            letter-spacing: 3.64px;
+        }
+        &__btn{
+            margin-bottom: 121px;
+            a{
+                flex-wrap: nowrap;
+                color: #ffffff;
+                font-family: Montserrat;
+                font-size: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 15px 20px;
+                background-color: #a57ee7;
+                border: 1px solid #505050;
+                line-height: 4;
+                transition: all 0.3s ease 0s; 
+                &:hover{
+                    background-color: #663cad;
+                }
+
+            }
+        }
+    }
+    .about-foto{
+        flex: 0 0 40%;
+        overflow: hidden;
+        position: relative;
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
         }
     }
 
