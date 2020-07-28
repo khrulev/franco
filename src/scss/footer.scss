@@ -13,7 +13,7 @@
 .column{
     
     &__common{
-        flex: 0 0 35%;
+        flex: 0 1 35%;
     }
     &__common-title{
         color: #f7f7f7;
@@ -39,7 +39,7 @@
     // &__form{}
 }
 .menu{
-    flex: 0 0 15%;
+    flex: 0 1 15%;
     &__title{
         color: #f7f7f7;
         font-family: Montserrat;
@@ -65,7 +65,7 @@
 
 
 .contacts{
-    flex: 0 0 15%;
+    flex: 0 1 15%;
     
     &__title{
         color: #f7f7f7;
@@ -92,7 +92,7 @@
 .form{
     padding: 0 0 0 40px;
     
-    flex: 0 0 35%;
+    flex: 0 1 35%;
     &__title{
         color: #ffffff;
         font-family: Montserrat;
@@ -106,10 +106,17 @@
     &__subscribe{
         input{
             padding: 5px 0 5px 5px;
-            width: 164px;
+            max-width: 164px;
             height: 41px;
             background-color: #ebebeb;
             margin-bottom: 70px;
+        }
+        @media (max-width: 1028px) {
+            input{
+                display: block;
+                padding: 0;
+                margin: 0 0 10px 0;
+            }
         }
         a{
             flex-wrap: nowrap;
@@ -126,6 +133,11 @@
             &:hover{
                 background-color: #663cad;
             }
+        }
+    }
+    @media (max-width: 1028px) {
+        &__subscribe{
+            margin-bottom: 10px;
         }
     }
     

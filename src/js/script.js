@@ -20,7 +20,33 @@ $(document).ready(function(){
         dots: false,
         appendArrows: $('.slider-arrow'),
         prevArrow: '<button id="prev" type="button" class="slick-prev slick-arrow"><img src="../img/main/slider/left-arrow.png"></img></button>',
-        nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><img src="../img/main/slider/right-arrow.png"></img></button>'
+        nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><img src="../img/main/slider/right-arrow.png"></img></button>',
+        responsive: [
+            {
+              breakpoint: 1232,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 980,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 880,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                  slidesToShow: 1
+                }
+              }
+            ]
         }
     );
 
