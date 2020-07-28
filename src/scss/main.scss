@@ -465,7 +465,9 @@
     padding: 0 170px;
 }
 
-// .item__picture{
+ .item__picture{
+     padding: 30px 10px;
+ }
 //     max-width: 988px;
 //     padding: 0 20px 0 20px;
 //     display: block;
@@ -507,11 +509,12 @@
         display: flex;
         padding: 0 0 120px 0;
     }
-
-    .sticky_jumbo{
-        margin: 70px 0 0 0;    
-    }
+    
 } 
+
+.sticky_jumbo{
+    margin: 70px 0 0 0 !important;    
+}
 
 .testi-slider{
     // padding: 0 0 64px 0;
