@@ -9,34 +9,35 @@
 .footer-wrapper-inner{
     padding: 100px 0 0 0;
 }
-
-.column{
-    
-    &__common{
-        flex: 0 1 35%;
+.footer-wrapper{
+    .column{
+        
+        &__common{
+            flex: 0 1 35%;
+        }
+        &__common-title{
+            color: #f7f7f7;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.6px;
+            letter-spacing: 0.8px;
+            margin-bottom: 50px;
+        }
+        &__common-text{
+            color: #aaaaaa;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 23px;
+            padding-right: 45px;
+        }
+        // &__common-brand{}
+        // &__navigation{}
+        // &__location{}
+        // &__form{}
     }
-    &__common-title{
-        color: #f7f7f7;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 21.6px;
-        letter-spacing: 0.8px;
-        margin-bottom: 50px;
-    }
-    &__common-text{
-        color: #aaaaaa;
-        font-family: "Open Sans";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-        margin-bottom: 23px;
-        padding-right: 45px;
-    }
-    // &__common-brand{}
-    // &__navigation{}
-    // &__location{}
-    // &__form{}
 }
 .menu{
     flex: 0 1 15%;
@@ -155,5 +156,42 @@
                 color: blanchedalmond;
             }
         }
+    }
+}
+
+@media (max-width: 580px) {
+    .footer-wrapper-inner{
+        flex-direction: column;
+        margin: 0 0 50px 0;
+    }
+    .column__common-brand{
+        margin: 0 0 50px 0;
+    }
+    .column__navigation{
+        display: none;
+    }
+    .column__location{
+        margin: 0 0 50px;   
+    }
+    .column__common-title, .contacts__title, .form__title{
+        margin-bottom: 0 !important;
+    }
+    .column__form{
+        padding: 0 !important;
+
+    }
+    .form__subscribe{
+        display: flex;
+        a{
+            padding: 0 36px;
+            line-height: 3;
+            font-size: 14px;
+        }
+        input{
+            margin: 1px 0 0 0;
+        }
+    }
+    .form__social{
+        padding: 20px;
     }
 }
